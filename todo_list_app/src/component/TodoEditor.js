@@ -14,6 +14,7 @@ const TodoEditor = ({ onCreate }) => {
       return;
     }
     onCreate(content);
+    setContent("");
   };
 
   return (
