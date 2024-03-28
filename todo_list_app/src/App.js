@@ -34,7 +34,7 @@ function App() {
       id: idRef.current,
       content,
       isDone: false,
-      createDate: new Date().getTime(),
+      createdDate: new Date().getTime(),
     };
     setTodo([newItem, ...todo]);
     idRef.current += 1;

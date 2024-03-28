@@ -8,7 +8,7 @@ const TodoList = ({ todo }) => {
       <input className="searchbar" placeholder="검색어를 입력하세요" />
       <div className="list_wrapper">
         {todo.map((it) => (
-          <TodoItem {...it} />
+          <TodoItem key={it.id} {...it} />
         ))}
       </div>
     </div>
