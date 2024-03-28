@@ -11,7 +11,9 @@ const TodoList = ({ todo }) => {
   const getSearchResult = () => {
     return search === ""
       ? todo
-      : todo.filter((it) => it.content.includes(search));
+      : todo.filter((it) =>
+          it.content.toLowerCase().includes(search.toLowerCase())
+        );
   };
 
   return (
